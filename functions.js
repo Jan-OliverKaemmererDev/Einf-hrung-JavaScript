@@ -15,7 +15,7 @@ function calculatePrice() {
 }
 
 
-// Grundwissen zu parms (Parametern)
+// Grundwissen zu parms (Parametern) INPUT
 // Ein Parameter ist ein Platzhalter.
 
 logCalculatedPrice(50, 500);
@@ -23,4 +23,15 @@ logCalculatedPrice(50, 300);
 
 function logCalculatedPrice(discount, price) {
     console.log((price - discount) * 1.19);
+}
+
+
+// Grundwissen zu parms (Parametern) OUTPUT
+
+console.log(logCalculatedPrice(50, 300));
+
+function logCalculatedPrice(discount, price) {
+    let value = (price - discount - discount) * 1.19;
+
+    return value;
 }
