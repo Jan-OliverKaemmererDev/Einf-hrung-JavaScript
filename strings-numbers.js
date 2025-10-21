@@ -27,4 +27,12 @@ console.log(myConcat);
 // let myCombination = 5.0 - "4.2";    -> 0.7999999999999998
 // let myCombination = 5.0 - "4,2";    -> NaN
 
-console.log(myCombination)
+// console.log(myCombination)
+
+
+
+// Ein weiterer Test mit String-Funktionen: length und trim
+let myTestString = "hallo     "
+
+myTestString = myTestString.trim();
+console.log(myTestString.length);
