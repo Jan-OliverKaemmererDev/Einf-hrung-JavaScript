@@ -28,3 +28,13 @@ document.getElementById('test_input1.0').value=123456;
 // Man sollte aber immer setAttribute verwenden
 document.getElementById('test_input2').setAttribute('value', '123456');
 console.log(document.getElementById('test_input2').value); // So liest man ein input-Feld aus.
+
+
+// Toggle Test Übung
+function toggleDNone(id) {
+    document.getElementById(id).classList.toggle('d_none')
+}
+
+function logger() {
+    console.log(123456);
+}
