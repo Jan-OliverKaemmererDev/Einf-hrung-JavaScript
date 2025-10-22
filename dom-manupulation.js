@@ -38,3 +38,19 @@ function toggleDNone(id) {
 function logger() {
     console.log(123456);
 }
+
+
+// OnKeyUp & OnKeyDown Übung
+function onkeyupdown(eventType) {
+    const inputElement = document.activeElement; 
+    const value = inputElement.value;
+    console.log(`[${eventType}] Aktueller Value des Feldes '${inputElement.id}': "${value}"`);
+}
+
+// Der Hauptunterschied liegt im Zeitpunkt des Event-Feuers, relativ zur Aktualisierung des Input-Wertes im DOM.
+
+// onkeydown feuert zu früh, um den gerade neu eingegebenen Buchstaben in input.value zu erfassen.
+
+// onkeyup feuert zu spät genug, um den gerade neu eingegebenen Buchstaben in input.value zu erfassen.
+
+// Wenn man den aktuellen (den neuen) Wert eines Inputfeldes nach einer Benutzereingabe auslesen möchte, ist onkeyup (oder besser noch, das oninput Event) in den meisten Fällen die korrektere Wahl.
