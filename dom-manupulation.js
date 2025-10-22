@@ -54,3 +54,9 @@ function onkeyupdown(eventType) {
 // onkeyup feuert zu spät genug, um den gerade neu eingegebenen Buchstaben in input.value zu erfassen.
 
 // Wenn man den aktuellen (den neuen) Wert eines Inputfeldes nach einer Benutzereingabe auslesen möchte, ist onkeyup (oder besser noch, das oninput Event) in den meisten Fällen die korrektere Wahl.
+
+
+
+// addEventListener Übung
+
+document.getElementById("our_p_tag").addEventListener("click", logger);
