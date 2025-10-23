@@ -10,6 +10,8 @@
     <script src="./functions.js"></script>
     <script src="./objects.js"></script>
     <script src="./lessons.js"></script>
+    <script src="./debugger.js"></script>
+    <script src="./scopes.js"></script>
     <style>
         .green_bg {
             width: 50px;
@@ -29,7 +31,7 @@
     </style>
 </head>
 <body onload="console.log(123)">
-    <h1 id="website_title">Der Titel der Webseite</h1>
+    <h1 onclick="console.log(1)" id="website_title">Der Titel der Webseite</h1>
     
     <div id="test_div"></div>
 
@@ -50,12 +52,22 @@
 
     <input type="text" onkeyup="console.log('keyup')">
     <input type="checkbox" onchange="console.log(9)">
-<br><br>
+<br>
+<br>
     <input type="text" id="myInput" onkeydown="onkeyupdown('onkeydown')">
     <br>
     <input type="text" id="myInput2" onkeyup="onkeyupdown('onkeyup')">
+<br>
+<br>
+<p id="debugger_log"></p>
+<button onclick="init()">Start Code</button>
+<br>
+<br>
+<button onclick="init()">start debugger testing</button>
+<p id="debugger_log"></p>
 
 </body>
+
 <script src="./dom-manupulation.js"></script>
 <script src="./dom-manupulation-lesson.js"></script>
 </html>
