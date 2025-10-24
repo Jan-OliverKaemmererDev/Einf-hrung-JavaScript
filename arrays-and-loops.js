@@ -1,12 +1,11 @@
 let myList= [12, "Banana", 1];
 
-const cars = [];
-cars[0] = "Saab";
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-cars[2] = "BMW";
+let singletestVar = fruits.pop()
 
 function initArrays() {
     myList[0] = "No Banana"
 
-    console.log(cars);
+    console.log(fruits);
 }
