@@ -14,9 +14,9 @@ function initArrays() {
 // Übung for-Schleife
 
 function initArrays() {
-
-    for (let indexFruits = 0; indexFruits < 3; indexFruits += 1) {
-        console.log(indexFruits);
+    let contentRef = document.getElementById('my_content');
+    contentRef.innerHTML = "";
+    for (let indexFruits = 0; indexFruits < fruits.length; indexFruits += 1) {
+        contentRef.innerHTML += `<p>${fruits[indexFruits]}</p>`
     }
-
 }
