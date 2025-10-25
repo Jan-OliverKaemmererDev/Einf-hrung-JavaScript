@@ -9,3 +9,14 @@ function initArrays() {
 
     console.log(fruits);
 }
+
+
+// Übung for-Schleife
+
+function initArrays() {
+
+    for (let indexFruits = 0; indexFruits < 3; indexFruits += 1) {
+        console.log(indexFruits);
+    }
+
+}
