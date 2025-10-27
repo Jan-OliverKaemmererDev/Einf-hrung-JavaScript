@@ -20,3 +20,20 @@ function initArrays() {
         contentRef.innerHTML += `<p>${fruits[indexFruits]}</p>`
     }
 }
+
+
+// for-Schleifen mit break unterbrechen
+
+function sumArray(arr) {
+    let sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        sum += arr[index];
+
+        if (arr[index] == "error") {
+            console.error("verdammt da war ein Fehler");
+            break;
+        }
+    }
+    return sum;
+}
+console.log(sumArray([3, 7, 1, "error", 4, 5]));
